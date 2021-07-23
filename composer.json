@@ -1,0 +1,28 @@
+{
+    "name": "1026jota/sdn-list",
+    "description": "This library search a name into SDN list",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "1026jota",
+            "email": "1026jota@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Jota\\SdnList\\": "src/"}
+    },
+    "extra": {
+        "laravel":{
+            "providers": [
+                "Jota\\SdnList\\Providers\\SdnListServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7",
+        "fabpot/goutte": "^3.2|^4.0",
+        "illuminate/support": "^5.5|^6|^7|^8"
+    }
+}
