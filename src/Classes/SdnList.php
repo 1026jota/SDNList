@@ -72,6 +72,10 @@ class SdnList{
                     $this->data['score'] = $col->text();
                 }
             });
+        $this->result['is_registered'] = false;
+            if($this->result['total_results'] > 0){
+                $this->result['is_registered'] = true;
+            }
             array_push($this->result['result'], $this->data);
         });
     }
@@ -83,7 +87,5 @@ class SdnList{
     public function getResult() : array
     {
         return $this->result;
-    }
-
-    
+    }   
 }
