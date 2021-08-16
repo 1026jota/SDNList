@@ -44,7 +44,7 @@ class SdnList{
             $this->makeData($response);
 
         }catch(Exception $e){
-            throw new ConnectionException('Connection error, verify url: '. $this->url, $e);
+            throw new ConnectionException('Connection error, verify url: '. config('sdnlist.url'), $e);
         }
     }
 
